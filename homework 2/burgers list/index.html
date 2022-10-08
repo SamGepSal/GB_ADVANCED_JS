@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BURGERS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <form action="#">
+        <legend class="collectBurger">Собери свой бургер</legend>
+        <fieldset class="fieldset">
+          <legend>Выбери размер бургера</legend>
+          <div>
+            <input
+              type="radio"
+              name="sizeBurger"
+              value="Big"
+              data-price="100"
+              data-calories="50"
+            />
+            Большой (100р. 50 калл.)
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="sizeBurger"
+              value="Small"
+              data-price="80"
+              data-calories="30"
+            />
+            Маленький (80р. 30 калл.)
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Выбери добавку к бургеру</legend>
+          <div>
+            <input
+              type="checkbox"
+              name="burgersFilling"
+              data-price="15"
+              data-calories="10"
+            />
+            Салат (15р. 10 калл.)
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="burgersFilling"
+              data-price="30"
+              data-calories="25"
+            />
+            Сыр (30р. 25 калл.)
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="burgersFilling"
+              data-price="20"
+              data-calories="15"
+            />
+            Помидор (20р. 15 калл.)
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Выбери дополнительную опцию</legend>
+          <div>
+            <input
+              type="checkbox"
+              name="burgersAddOptions"
+              data-price="30"
+              data-calories="20"
+            />
+            Больше соуса (30р. 20 калл.)
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="burgersAddOptions"
+              data-price="35"
+              data-calories="25"
+            />
+            Посыпка пармезана (35р. 25 калл.)
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="burgersAddOptions"
+              data-price="25"
+              data-calories="0"
+            />
+            Приправа (25р. 0 калл.)
+          </div>
+        </fieldset>
+        <button id="check">Собрать бургер</button>
+        <p class="sumPrice">
+          Итоговая стоимость: <span class="totalAmount">0</span>
+        </p>
+        <p class="sumCalories">
+          Количество каллорий: <span class="totalCalories">0</span>
+        </p>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

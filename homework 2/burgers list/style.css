@@ -1,0 +1,23 @@
+.main {
+  border: 2px solid #000;
+}
+
+.collectBurger {
+  padding-bottom: 30px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+#check {
+  margin-left: 5px;
+}
+
+.sumPrice {
+  padding-left: 5px;
+}
+
+.sumCalories {
+  padding-left: 5px;
+}/*# sourceMappingURL=style.css.map */

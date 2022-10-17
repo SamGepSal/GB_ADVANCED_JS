@@ -1,0 +1,98 @@
+<meta charset="UTF-8" />
+
+<div id="app">
+  <div v-for="item of goods">
+    <p>Название авто: {{item.title}}</p>
+    <p>стоимость: {{item.price}}</p>
+    <button @click="addProduct(item)">Добавить товар в корзину</button>
+    <hr />
+  </div>
+  <hr />
+  <h1>Корзина покупок</h1>
+  <div v-for="item of cart">
+    <p>Название авто: {{item.title}}</p>
+    <p>стоимость: {{item.price}}</p>
+    <p>количество покупок: {{item.quantity}}</p>
+    <p>общая сумма с учетом количества: {{ item.quantity * item.price }}</p>
+  </div>
+  <br />
+  <h1>Привет, {{name}}!</h1>
+  <a :href="link">Перейти в поисковик</a><br />
+  <h2>{{ hello() }}</h2>
+  <div v-show="show">
+    <p v-if="show">text is visible</p>
+    <p v-else>text is not visible</p>
+    <button @click="show=!show">show/hide</button>
+    <button @click="increase(forCounter)">OK</button>
+    <span>{{ counter }}</span>
+  </div>
+  <button @click="show=!show">показать/скрыть</button>
+  <p>
+    {{ counter > 10 ? 'счетчик больше 10' : 'счетчик меньше либо равен 10' }}
+  </p>
+  <p @mousemove="getCoordinates($event)">
+    При наведении мышкой на этот текст обновляем координаты: {{x}} / {{y}}.
+    <span @mousemove.stop>данный текст не реагирует на движение мышки</span>
+  </p>
+  <input type="text" v-model.lazy="name" />
+  <div v-html="htmlElement"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+<script>
+  const app = new Vue({
+    el: "#app",
+    data: {
+      name: "Иван",
+      link: "https://google.com",
+      counter: 0,
+      forCounter: 2,
+      show: false,
+      x: 0,
+      y: 0,
+      htmlElement: `<a href='https://google.com'>Google</a>`,
+      cart: [],
+      goods: [],
+    },
+    methods: {
+      hello() {
+        return `${this.name}, добрый день!`;
+      },
+      increase(x) {
+        this.counter += x;
+      },
+      getCoordinates(e) {
+        this.x = e.clientX;
+        this.y = e.clientY;
+      },
+      addProduct(item) {
+        const find = this.cart.find((good) => item.id == good.id);
+        if (find) {
+          find.quantity++;
+        } else {
+          this.$set(item, "quantity", 1);
+          //const cartItem = Object.assign({ quantity: 1 }, item);
+          this.cart.push(item);
+        }
+      },
+    },
+    mounted() {
+      this.goods = [
+        {
+          id: 1,
+          title: "Audi",
+          price: 1000,
+        },
+        {
+          id: 2,
+          title: "Audi",
+          price: 1200,
+        },
+        {
+          id: 3,
+          title: "Audi",
+          price: 2300,
+        },
+      ];
+    },
+  });
+</script>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd397a1798.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header container">
+        <div class="header__logo">
+          <a class="link-logo" href="#"
+            ><div class="logo-img">
+              <img src="img\XMLID 9.png" alt="logo" />
+            </div>
+            <div class="logo-text">Ortho Labs</div></a
+          >
+        </div>
+        <div class="header__phone">+7(999)555-77-77</div>
+        <a class="location-link" href="#">
+          <div class="header__location">
+            Наши клиники<i class="fa-solid fa-route"></i>
+          </div>
+        </a>
+        <div class="header__reg">
+          <button class="header__reg-button">Записаться на прием</button>
+        </div>
+        <div class="header__icon">
+          <a href="#" class="icon-link"><i class="fa-brands fa-vk"></i></a>
+        </div>
+        <div class="header__icon">
+          <a href="#" class="icon-link"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="header__icon">
+          <a href="#" class="icon-link"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </div>
+        <div class="header__icon">
+          <a href="#" class="icon-link"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <section>
+        <div class="content">
+          <div class="navigation">
+            <div class="container">
+              <ul class="navigation-text">
+                <li><a href="#" class="inner-text">Терапия</a></li>
+                <li><a href="#" class="inner-text">Хирургия</a></li>
+                <li><a href="#" class="inner-text">Ортодонтия</a></li>
+                <li><a href="#" class="inner-text">Гигиена</a></li>
+                <li><a href="#" class="inner-text">Ортопедия</a></li>
+
+                <cart ref="cart"></cart>
+              </ul>
+              <div class="mid-content">
+                <div class="text-block">
+                  <div class="text-block__title"><h2>Ортодонтия</h2></div>
+                  <div class="text-block__text">
+                    Ортодонтия - это раздел стоматологии, занимающийся лечением
+                    дефектов развития зубов и челюстно-лицевого скелета. Из-за
+                    неровности зубов и нарушений зубного ряда, зубы с трудом
+                    поддаются гигиеническим процедурам, более подвержены риску
+                    раннего развития кариеса и пародонтита, а также могут
+                    вызывать дополнительные нагрузки челюстно-лицевых мышц при
+                    жевании, что, в свою очередь, приводит к головным болям,
+                    синдрому височно-нижнечелюстного сустава (ВНЧС), болям а
+                    области шеи, плечевого сустава и спины. Неровности зубов и
+                    нарушения зубного ряда также могут отрицательно сказываться
+                    на Вашем внешнем виде.
+                  </div>
+                  <div>
+                    <button class="text-block__btn">ПОДРОБНЕЕ</button>
+                  </div>
+                </div>
+                <div class="image-block">
+                  <img
+                    class="ortho-img"
+                    src="img\orthodontic-main.jpg"
+                    alt="someImg"
+                  />
+                </div>
+              </div>
+              <nav class="bottom-nav">
+                <filter-search></filter-search>
+                <div class="second-link">
+                  <a class="text-color" href="#">Центр обучения</a>
+                </div>
+                <div class="third-link">
+                  <a class="text-color" href="#">VIP клиентам</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <error ref="error"></error>
+          <products ref="products"></products>
+        </div>
+      </section>
+      <footer>
+        <div class="footer container">
+          <div class="header__logo">
+            <div class="footer-text">(c) 2021 Все права защищены.</div>
+          </div>
+          <div class="header__phone header__phone_footer">+7(999)555-77-77</div>
+          <a class="location-link" href="#">
+            <div class="header__location header__location_footer">
+              Наши клиники<i class="fa-solid fa-route"></i>
+            </div>
+          </a>
+          <div class="header__reg_footer">
+            <button class="header__reg-button header__reg-button_footer">
+              Записаться на прием
+            </button>
+          </div>
+          <div class="header__icon header__icon_footer">
+            <a href="#" class="icon-link"><i class="fa-brands fa-vk"></i></a>
+          </div>
+          <div class="header__icon header__icon_footer">
+            <a href="#" class="icon-link"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <div class="header__icon header__icon_footer">
+            <a href="#" class="icon-link"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </div>
+          <div class="header__icon header__icon_footer">
+            <a href="#" class="icon-link"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

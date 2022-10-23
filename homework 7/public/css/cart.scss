@@ -1,0 +1,79 @@
+/* Basket */
+
+.basket {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 50px;
+    border: 2px solid $second-color;
+    background: white;
+    color: black;
+
+}
+
+.basket__angle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 2px solid $second-color;
+    border-top: 2px solid $second-color;
+    margin-top: -11px;
+    margin-left: 275px;
+}
+.basket__block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+}
+
+.basket__item{
+    display: flex;
+    padding: 20px;    
+}
+.basket__img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.basket__img_inner{
+    width: 80px;
+    height: 80px;
+}
+.basket__product {
+    margin-right: 110px;
+}
+.basket__productName {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.basket__quontity {
+    font-size: 14px;
+}
+.basket__cost {
+    font-size: 14px;
+}
+.basket__sum {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.basket__delete {
+    display: flex;
+    border: 1px solid $second-color;
+    background-color: $second-color;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.basket__delete:hover{
+    background-color: #fff;
+    color: $second-color;
+}

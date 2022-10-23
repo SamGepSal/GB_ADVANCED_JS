@@ -1,0 +1,60 @@
+/* ПЕРЕМЕННЫЕ */
+$main-color: #4FBFA5;
+$second-color: #00868A;
+
+
+/* ОБНУЛЕНИЕ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+   text-decoration: none
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.container {
+    width: 1295px;
+    margin: 0 auto;
+}
+
+/* ПРИЖАТИЕ К НИЗУ */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  flex-grow: 1;
+}
+footer {
+  flex-shrink: 0;
+}
+  
+  @import 'header.scss';
+  @import 'cart.scss';
+  @import 'Content.scss';
+  @import 'footer.scss';
+  
+  

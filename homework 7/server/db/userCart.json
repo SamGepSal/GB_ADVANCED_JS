@@ -1,0 +1,35 @@
+{
+    "amount": 2580,
+    "countGoods": 3,
+    "contents": [
+        {
+            "id_product": 5,
+            "product_name": "Консультация",
+            "img_product": "img/products/5.jpg",
+            "price": 80,
+            "quantity": 1
+        },
+        {
+            "id_product": 3,
+            "product_name": "Керамические брекеты",
+            "img_product": "img/products/3.jpg",
+            "price": 800,
+            "quantity": 1
+        },
+        {
+            "id_product": 8,
+            "product_name": "Установка брекетов",
+            "img_product": "img/products/8.jpg",
+            "price": 450,
+            "quantity": 4
+        },
+        {
+            "quantity": 1,
+            "id_product": 4,
+            "product_name": "Коррекция брекетов",
+            "img_product": "img/products/4.jpg",
+            "price": 100,
+            "imgPath": "img/products/4.jpg"
+        }
+    ]
+}

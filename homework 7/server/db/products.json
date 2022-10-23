@@ -1,0 +1,50 @@
+[
+    {
+      "id_product": 1,
+      "product_name": "Брекеты",
+      "img_product": "img/products/1.jpg",
+      "price": 600
+    },
+    {
+      "id_product": 2,
+      "product_name": "Элайнеры",
+      "img_product": "img/products/2.jpg",
+      "price": 900
+    },
+    {
+      "id_product": 3,
+      "product_name": "Керамические брекеты",
+      "img_product": "img/products/3.jpg",
+      "price": 800
+    },
+    {
+      "id_product": 4,
+      "product_name": "Коррекция брекетов",
+      "img_product": "img/products/4.jpg",
+      "price": 100
+    },
+    {
+        "id_product": 5,
+        "product_name": "Консультация",
+        "img_product": "img/products/5.jpg",
+        "price": 80
+    },
+    {
+        "id_product": 6,
+        "product_name": "Виниры",
+        "img_product": "img/products/6.jpg",
+        "price": 5000
+    },
+    {
+        "id_product": 7,
+        "product_name": "Снятие брекетов",
+        "img_product": "img/products/7.jpg",
+        "price": 300
+    },
+    {
+        "id_product": 8,
+        "product_name": "Установка брекетов",
+        "img_product": "img/products/8.jpg",
+        "price": 450
+    }
+  ]

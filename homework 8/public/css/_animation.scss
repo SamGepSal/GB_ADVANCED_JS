@@ -1,0 +1,17 @@
+%images:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+%button:hover {
+    background-color: $color-pink;
+    color: white;
+}
+
+%button-click:focus {
+    transform: scale(1.1);
+}
+
+%button-reverse:hover {
+    box-shadow: 1px 1px 50px $color-pink;
+}

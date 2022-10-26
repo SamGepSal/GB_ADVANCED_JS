@@ -1,0 +1,82 @@
+/* Basket */
+.basket {
+  position: absolute;
+  z-index: 1;
+  right: 80px;
+  top: 50px;
+  border: 1px solid #000;
+  background: white;
+  color: black;
+}
+
+.basket__angle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  margin-top: -11px;
+  margin-left: 267px;
+}
+
+.basket__block {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.basket__item {
+  display: flex;
+  padding: 20px;
+}
+
+.basket__img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
+.basket__product {
+  margin-right: 110px;
+}
+
+.basket__productName {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.basket__quontity {
+  font-size: 12px;
+}
+
+.basket__cost {
+  font-size: 12px;
+}
+
+.basket__sum {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.basket__delete {
+  display: flex;
+  border: 1px solid #000;
+  background-color: black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.basket__delete:hover {
+  background-color: #fff;
+  color: black;
+}/*# sourceMappingURL=cart.css.map */

@@ -1,0 +1,152 @@
+/* Content */
+
+.navigation{
+    height: 700px;
+    background-color: $main-color;
+}
+
+.navigation-text{
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-around;
+}
+.inner-text{
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.cart-btn{
+    margin-top: -10px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    padding: 10px 40px;
+}
+
+.fa-cart-plus{
+    color: $main-color;
+    font-size: 18px;
+    padding-right: 8px;
+}
+
+.mid-content{
+    display: flex;
+    margin-top: 23px;
+}
+.text-block {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+}
+.text-block__title {
+    margin-top: 80px;
+    font-family: "Lato", sans-serif;
+    font-size: 48px;
+}
+.text-block__text {
+    width: 25vw;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.text-block__btn {
+    background-color: $second-color;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    padding: 10px 40px;
+    margin-top: 42px;
+
+}
+.image-block {
+    width: 55vw;
+    height: 533px;
+}
+.ortho-img{
+    width: 100%;
+    height: 100%;
+}
+.bottom-nav {
+    display: flex;
+    
+}
+.fist-link {
+    position: relative;
+    width: 50%;
+    background-color: $second-color;
+    height: 69px;
+    padding-top: 23px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.search {
+    width: 300px;
+    color: #fafafa;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fafafa;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 18px;
+}
+.btn-search{
+    background-color: transparent;
+    border: none;
+    color: #fafafa;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 12px;
+    right: 183px;
+}
+.second-link {
+    width: 25%;
+    background-color: $main-color;
+    height: 69px;
+    padding-top: 23px;
+    text-align: center;
+  font-size: 18px;
+}
+.third-link {
+    width: 25%;
+    background-color: $second-color;
+    height: 69px;
+    padding-top: 23px;
+    text-align: center;
+  font-size: 18px;
+}
+.text-color{
+    color: white;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.card__img {
+    max-width: 100%;
+    height: 100%;
+}
+.card__name {
+    background-color: $second-color;
+}
+.card__price {
+    background-color: $second-color;
+}
+.buy-btn {
+    background-color: $main-color;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    color: #fafafa;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}

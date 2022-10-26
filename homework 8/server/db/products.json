@@ -1,0 +1,38 @@
+[
+    {
+      "id_product": "1",
+      "product_name": "JACKET",
+      "imgProduct": "img/1.jpg",
+      "price": 220
+    },
+    {
+      "id_product": "2",
+      "product_name": "Costume",
+      "imgProduct": "img/2.jpg",
+      "price": 350
+    },
+    {
+      "id_product": "3",
+      "product_name": "Hoodie",
+      "imgProduct": "img/3.jpg",
+      "price": 300
+    },
+    {
+      "id_product": "4",
+      "product_name": "Pants",
+      "imgProduct": "img/4.jpg",
+      "price": 547
+    },
+    {
+        "id_product": "5",
+        "product_name": "Jacket",
+        "imgProduct": "img/5.jpg",
+        "price": 632
+      },
+      {
+        "id_product": "6",
+        "product_name": "Shirt",
+        "imgProduct": "img/6.jpg",
+        "price": 800
+      }
+  ]

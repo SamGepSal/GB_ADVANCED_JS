@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>desktop_index</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dd397a1798.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <nav class="top_background">
+        <div class="header container">
+          <ul class="left_side">
+            <li class="left_inner">
+              <a href="index.html"><img src="img\logo.svg" alt="logo" /></a>
+            </li>
+            <li class="left_inner">
+              <search></search>
+            </li>
+          </ul>
+          <ul class="right_side">
+            <li class="right_inner open_menu">
+              <details>
+                <summary>
+                  <img class="right_icon_img" src="img\menu.svg" alt="menu" />
+                </summary>
+                <ul class="menu">
+                  <li class="menu_head">menu</li>
+                  <li class="menu_header">man</li>
+                  <li class="list">
+                    <a class="link_menu" href="#">accesories</a>
+                  </li>
+                  <li class="list">
+                    <a class="link_menu" class="link_menu" href="#">Bags</a>
+                  </li>
+                  <li class="list"><a class="link_menu" href="#">Denim</a></li>
+                  <li class="list">
+                    <a class="link_menu" href="#">T-Shirts</a>
+                  </li>
+                  <li class="menu_header">women</li>
+                  <li class="list">
+                    <a class="link_menu" href="#">Accessories</a>
+                  </li>
+                  <li class="list">
+                    <a class="link_menu" href="#">Jackets & Coats</a>
+                  </li>
+                  <li class="list"><a class="link_menu" href="#">Polos</a></li>
+                  <li class="list">
+                    <a class="link_menu" href="#">T-Shirts</a>
+                  </li>
+                  <li class="list"><a class="link_menu" href="#">Shirts</a></li>
+                  <li class="menu_header">kids</li>
+                  <li class="list">
+                    <a class="link_menu" href="#">Accessories</a>
+                  </li>
+                  <li class="list">
+                    <a class="link_menu" href="#">Jackets & Coats</a>
+                  </li>
+                  <li class="list"><a class="link_menu" href="#">Polos</a></li>
+                  <li class="list">
+                    <a class="link_menu" href="#">T-Shirts</a>
+                  </li>
+                  <li class="list"><a class="link_menu" href="#">Shirts</a></li>
+                  <li class="list"><a class="link_menu" href="#">Shirts</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="right_inner display-none">
+              <a href="Registration.html"
+                ><img class="right_icon_img" src="img\personal_area.svg" alt=""
+              /></a>
+            </li>
+
+            <cart-comp ref="cart"></cart-comp>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="container banner-content">
+          <img src="img\man_in_jacket.png" class="man display-none" alt="man" />
+          <div class="banner_text">
+            <div class="left-block">
+              <p class="first_text">the brand</p>
+              <p class="second_text">
+                of luxerious
+                <span class="third_text">fashion</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="mid_nav container">
+        <div class="mid">
+          <div class="mini_card">
+            <a class="mini_card_link" href="#"
+              ><img src="img\for_women.jpg" alt="for_women" class="img"
+            /></a>
+            <a class="text_block" href="#">
+              <p class="article">30% off</p>
+              <p class="text">for women</p>
+            </a>
+          </div>
+          <div class="mini_card">
+            <a class="mini_card_link" href="#"
+              ><img src="img\for_man.jpg" alt="for_women" class="img"
+            /></a>
+            <a class="text_block" href="#">
+              <p class="article">hot deal</p>
+              <p class="text">for men</p>
+            </a>
+          </div>
+          <div class="mini_card">
+            <a class="mini_card_link" href="#"
+              ><img src="img\for_kids.jpg" alt="for_women" class="img"
+            /></a>
+
+            <a class="text_block" href="#">
+              <p class="article">new arrivals</p>
+              <p class="text">for kids</p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#"
+            ><img
+              src="img\accesories.jpg"
+              alt="for_accesories"
+              class="img img-accessories"
+          /></a>
+
+          <a href="#" class="text_block">
+            <p class="article">luxirous & trendy</p>
+            <p class="text">accesories</p>
+          </a>
+        </div>
+      </nav>
+      <section>
+        <div class="section_text">
+          <h3 class="h_section">Fetured Items</h3>
+          <p class="p_section">
+            Shop for items based on what we featured in this week
+          </p>
+        </div>
+        <products ref="products"></products>
+        <error ref="error"> </error>
+        <div class="buttom_container">
+          <div class="buttom_all_products">
+            <a class="buttom_all_products_link" href="catalogue.html"
+              >Browse All Products</a
+            >
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="top_footer">
+          <div class="benefits container">
+            <div class="in_benefits">
+              <div class="icon">
+                <img src="img\delivery_icon.svg" alt="delivery" />
+              </div>
+              <h3 class="article_top_footer">Free Delivery</h3>
+              <p class="text_top_footer">
+                Worldwide delivery on all. Authorit tively morph next-generation
+                innov tion with extensive models.
+              </p>
+            </div>
+            <div class="in_benefits">
+              <div class="icon">
+                <img src="img\discount_icon.svg" alt="discount" />
+              </div>
+              <h3 class="article_top_footer">Sales & discounts</h3>
+              <p class="text_top_footer">
+                Worldwide delivery on all. Authorit tively morph next-generation
+                innov tion with extensive models.
+              </p>
+            </div>
+            <div class="in_benefits">
+              <div class="icon">
+                <img src="img\quolity_icon.svg" alt="quolity" />
+              </div>
+              <h3 class="article_top_footer">Quality assurance</h3>
+              <p class="text_top_footer">
+                Worldwide delivery on all. Authorit tively morph next-generation
+                innov tion with extensive models.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mid_footer">
+          <div class="mid_footer_block container">
+            <div class="left_mid_footer">
+              <div class="portret">
+                <img src="img\portret.png" alt="portret" />
+              </div>
+              <p class="left_text_footer">
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“
+              </p>
+            </div>
+            <div class="right_mid_footer">
+              <h3 class="right_footer_article">SUBSCRIBE</h3>
+              <p class="right_footer_text">FOR OUR NEWLETTER AND PROMOTION</p>
+              <form class="form">
+                <input
+                  type="email"
+                  class="input_email"
+                  placeholder="Enter Your Email"
+                />
+                <input type="submit" value="Subscribe" class="link_subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="last">
+          <div class="last_footer container">
+            <div class="reserved">
+              <p>&copy;2021 Brand All Rights Reserved.</p>
+            </div>
+            <ul class="social_icon">
+              <li class="li_icon">
+                <a href="#"
+                  ><img src="img\facebook_icon.png" alt="facebook"
+                /></a>
+              </li>
+              <li class="li_icon">
+                <a href="#"
+                  ><img src="img\instagramm_icon.png" alt="instagramm"
+                /></a>
+              </li>
+              <li class="li_icon">
+                <a href="#"><img src="img\P_icon.png" alt="P" /></a>
+              </li>
+              <li class="li_icon">
+                <a href="#"><img src="img\twitter_icon.png" alt="twitter" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="js/ProductsComp.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/SearchComp.js"></script>
+    <script src="js/Error.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
